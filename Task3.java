@@ -9,7 +9,7 @@ public class Task3 {
         numbers[numbers.length-1] = temp;
 
         //3. Вывести в консоль результат суммы первого и среднего элемента
-        int summ = numbers[numbers.length-1] + numbers[numbers.length/2];
+        int summ = numbers[0] + numbers[numbers.length/2];
 
         System.out.println(summ);
     }
