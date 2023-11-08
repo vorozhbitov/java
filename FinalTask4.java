@@ -20,7 +20,7 @@ public class FinalTask4 {
         System.out.println("У вас есть 3 попытки чтоб угадать. Напишите <Подсказка> на первой попытке чтобы получить подсказку");
 
         for (int attempt = 1; attempt <= attempts; attempt++) {
-            System.out.print("Попытка " + attempt + ": ");
+            System.out.print("Ответ: ");
             String answer = scanner.nextLine();
 
             if (answer.equalsIgnoreCase("Подсказка") && attempt > 1) {
@@ -29,6 +29,7 @@ public class FinalTask4 {
 
             if (attempt == 1 && answer.equalsIgnoreCase("Подсказка")) {
                 System.out.println("Подсказка: Сжатый комьютерный вредитель");
+                attempt = 2;
             } else if (answer.equalsIgnoreCase("Заархивированный вирус")) {
                 System.out.println("Правильно!");
                 break;
